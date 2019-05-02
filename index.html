@@ -10,25 +10,29 @@
 
         <div class="content">
 
-            <form id="add-cafe-form"></form>
+            <form id="add-cafe-form">
+              <input type="text" name="name" placeholder="Cafe name">
+              <input type="text" name="city" placeholder="Cafe city">
+              <button>Add Cafe</button>
+            </form>
 
             <ul id="cafe-list"></ul>
 
         </div>
-        
+                
         <script>
           // Initialize Firebase
           var config = {
-            apiKey: "AIzaSyD8s1eRPkYrfzS__9XRDnft52I6eZuWfuU",
-            authDomain: "myfirebasesample-e5f8a.firebaseapp.com",
-            databaseURL: "https://myfirebasesample-e5f8a.firebaseio.com",
-            projectId: "myfirebasesample-e5f8a",
-            storageBucket: "myfirebasesample-e5f8a.appspot.com",
-            messagingSenderId: "207233978064"
+            apiKey: "AIzaSyDoZHMf3Qks7HQSmx2veLG7xMyL9xmbdnI",
+            authDomain: "ninja-firestore-tut-d2491.firebaseapp.com",
+            databaseURL: "https://ninja-firestore-tut-d2491.firebaseio.com",
+            projectId: "ninja-firestore-tut-d2491",
+            storageBucket: "ninja-firestore-tut-d2491.appspot.com",
+            messagingSenderId: "1086589875666"
           };
           firebase.initializeApp(config);
           const db = firebase.firestore();
-          db.settings({ timestampsInSnapshots: true});   
+          // db.settings({ timestampsInSnapshots: true });
         </script>
         <script src="app.js"></script>
     </body>
